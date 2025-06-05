@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "35ac2785-015a-466a-b47e-23762592940d",
+		"name": "API Tareas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44931613",
+		"_collection_link": "https://g-cabrera-ramirez-44401.postman.co/workspace/g-cabrera-ramirez's-Workspace~a192e727-509b-4a28-89ae-b1def6dbc21d/collection/44931613-35ac2785-015a-466a-b47e-23762592940d?action=share&source=collection_link&creator=44931613"
+	},
+	"item": [
+		{
+			"name": "Consultar tarea",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/todos/1",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"todos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear tarea",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Nueva tarea\",\r\n  \"body\": \"Descripción de la tarea\",\r\n  \"userId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
